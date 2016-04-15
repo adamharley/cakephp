@@ -749,7 +749,7 @@ class Query implements ExpressionInterface, IteratorAggregate
      * ### Using expressions objects:
      *
      * ```
-     *  $exp = $query->newExpr()->add(['id !=' => 100, 'author_id' != 1])->tieWith('OR');
+     *  $exp = $query->newExpr()->add(['id !=' => 100, 'author_id !=' 1])->tieWith('OR');
      *  $query->where(['published' => true], ['published' => 'boolean'])->where($exp);
      * ```
      *
